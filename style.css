@@ -133,6 +133,9 @@ footer ul {
 }
 footer img {
   display: block;
+  max-width: 30px;
+}
+footer .rs-icon {
   max-width: 60px;
 }
 @media (min-width: 768px) {

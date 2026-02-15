@@ -79,7 +79,7 @@
         export class Challenge {
           static solution(number: number) {
             let sum: number = 0;
-            for (let i: number = 0; i < number; i++) {
+            for (let i: number = 0; i &lt number; i++) {
               if (i % 3 === 0 || i % 5 === 0) {
                 sum += i;
               }
@@ -122,11 +122,15 @@
     </main>
     <footer class="container">
       <ul>
-        <li><a href="https://github.com/Lukagbn">lukagbn</a></li>
+        <li>
+          <a href="https://github.com/Lukagbn"
+            ><img src="./github.png" alt="github icon"
+          /></a>
+        </li>
         <li>2026</li>
         <li>
           <a href="https://rs.school/courses/short-track"
-            ><img src="./rsschool.png" alt="rsschool"
+            ><img class="rs-icon" src="./rsschool.png" alt="rsschool"
           /></a>
         </li>
       </ul>
