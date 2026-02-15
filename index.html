@@ -3,7 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google fonts(roboto)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <ul class="container">
+        <li><a href="#self-introduction">self-introduction</a></li>
+        <li><a href="#contact-information">contact-information</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#code">code</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#education">education</a></li>
+        <li><a href="#languages">languages</a></li>
+      </ul>
+    </header>
+    <main class="container">
+      <img class="profile-img" src="./profile.jpg" alt="profile picture" />
+      <h1>Luka Gabunia <span class="highlight">Front-End Developer</span></h1>
+      <section id="self-introduction">
+        <h2>Self Introduction</h2>
+        <p>
+          Hi, I’m Luka gabunia, a Frontend Developer dedicated to building fast,
+          scalable, and highly interactive digital experiences. I specialize in
+          the React ecosystem, using Next.js to create high-performance web
+          applications and React Native (Expo) to deliver seamless mobile
+          experiences. My focus is on the 'User' side of the stack: translating
+          complex requirements into fluid, functional interfaces. I write clean,
+          type-safe code with TypeScript and build pixel-perfect, responsive
+          designs using Tailwind CSS and Sass/SCSS. I thrive on the challenge of
+          taking a design from a static layout to a living, breathing product
+          that works beautifully on any screen.
+        </p>
+      </section>
+      <section id="contact-information">
+        <h2>Contact Information</h2>
+        <ul>
+          <li>Email</li>
+          <li>LinkedIn</li>
+          <li>Discord</li>
+          <li>Location</li>
+        </ul>
+      </section>
+      <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>TailwindCSS</li>
+          <li>SASS/SCSS</li>
+          <li>Javascript</li>
+          <li>Typescript</li>
+          <li>Git & Github</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>React Native</li>
+        </ul>
+      </section>
+      <section id="code">
+        <h2>Code Example</h2>
+        <p>
+          export class Challenge {<br />
+          static solution(number: number) {<br />
+          let sum: number = 0;<br />
+          for (let i: number = 0; i < number; i++) {<br />
+          if (i % 3 === 0 || i % 5 === 0) {<br />
+          sum += i;<br />
+          }<br />
+          }<br />
+          return sum;<br />
+          }<br />
+          }<br />
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="https://lukagbn.github.io/BlogNest/">Blog Nest</a></li>
+          <li>
+            <a href="https://lukagbn.github.io/Apex-Apartments/"
+              >Apex Apartments</a
+            >
+          </li>
+          <li>
+            <a href="https://react-shop-puce-gamma.vercel.app/login"
+              >The Daily Haul</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li>Georgian Technical University: <span>2023 - present</span></li>
+          <li>Smart Academy: <span>2025 - 2026</span></li>
+        </ul>
+      </section>
+      <section id="languages">
+        <h2>Languages</h2>
+        <ul>
+          <li>English - B2</li>
+          <li>Russian - B2</li>
+        </ul>
+      </section>
+    </main>
+    <footer class="container">
+      <ul>
+        <li><a href="https://github.com/Lukagbn">Github</a></li>
+        <li>2026</li>
+        <li>
+          <a href="https://rs.school/courses/short-track"
+            ><img src="./rsschool.png" alt="rsschool"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
