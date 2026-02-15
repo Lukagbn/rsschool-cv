@@ -47,19 +47,28 @@ header ul {
 header ul li a {
   color: black;
   font-weight: 700;
+  text-decoration: none;
 }
 main {
   margin-block: 30px;
 }
 h2 {
   margin-block: 20px;
+  text-decoration: underline;
 }
 #code p {
   padding: 10px;
-  background: #80808069;
+  background: #a9a9a969;
+  color: rgba(0, 173, 0, 0.632);
 }
 #projects ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+#education ul li {
+  font-weight: 700;
+}
+#education ul li span {
+  font-weight: 400;
 }
