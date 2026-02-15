@@ -10,13 +10,16 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+  color: #222;
+  padding-inline: 20px;
 }
 .container {
   max-width: 340px;
   width: 100%;
-  background-color: #eeeeeecc;
+  background: white;
   border-radius: 20px;
-  padding: 15px;
+  padding: 30px;
 }
 .profile-img {
   display: block;
@@ -24,66 +27,131 @@ body {
   width: 100%;
   border-radius: 50%;
   margin: auto;
-}
-ul li {
-  list-style: none;
+  border: 4px solid #7c3aed;
 }
 h1 {
   text-align: center;
 }
-h1 span {
+h1 .highlight {
   display: block;
-  color: rgb(156, 5, 156);
+  font-size: 18px;
+  font-weight: 400;
+  color: #7c3aed;
+  margin-top: 5px;
+}
+header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 header ul {
   display: flex;
   width: 100%;
   gap: 20px;
   flex-wrap: wrap;
-  padding: 20px;
-  background-color: #eeeeeecc;
-  margin-top: 20px;
   border-radius: 20px;
+  list-style: none;
 }
 header ul li a {
-  color: black;
-  font-weight: 700;
   text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.3s;
+}
+header ul li a:hover {
+  color: #7c3aed;
 }
 main {
   margin-block: 30px;
 }
+#self-introduction p {
+  text-align: justify;
+}
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+#skills ul li {
+  background: #f3f0ff;
+  padding: 8px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+#skills ul li:hover {
+  background: #7c3aed;
+  color: white;
+}
 h2 {
   margin-block: 20px;
-  text-decoration: underline;
+  position: relative;
+  padding-bottom: 5px;
 }
-#code p {
-  padding: 10px;
-  background: #a9a9a969;
-  color: rgba(0, 173, 0, 0.632);
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background: #7c3aed;
+}
+#code pre {
+  background: #1e1e2f;
+  color: #00ff88;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-x: auto;
 }
 #projects ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#education ul li {
-  font-weight: 700;
+#projects li a {
+  text-decoration: none;
+  color: #7c3aed;
+  font-weight: 500;
+  transition: 0.3s;
 }
-#education ul li span {
-  font-weight: 400;
+#projects li a:hover {
+  color: #4c1d95;
+}
+#contact-information span,
+#education span,
+#languages span {
+  font-weight: 700;
 }
 footer ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
 }
 footer img {
   display: block;
   max-width: 60px;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .container {
-    max-width: 600px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  h1 {
+    grid-column: span 2;
+  }
+  main.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .profile-img {
+    grid-column: span 2;
+  }
+  #self-introduction {
+    grid-column: span 2;
   }
 }

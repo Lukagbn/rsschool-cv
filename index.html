@@ -14,16 +14,18 @@
     <title>CV</title>
   </head>
   <body>
-    <header>
-      <ul class="container">
-        <li><a href="#self-introduction">self-introduction</a></li>
-        <li><a href="#contact-information">contact-information</a></li>
-        <li><a href="#skills">skills</a></li>
-        <li><a href="#code">code</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#education">education</a></li>
-        <li><a href="#languages">languages</a></li>
-      </ul>
+    <header class="container">
+      <nav>
+        <ul>
+          <li><a href="#self-introduction">self-introduction</a></li>
+          <li><a href="#contact-information">contact-information</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#code">code</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#education">education</a></li>
+          <li><a href="#languages">languages</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="container">
       <img class="profile-img" src="./profile.jpg" alt="profile picture" />
@@ -46,14 +48,14 @@
       <section id="contact-information">
         <h2>Contact Information</h2>
         <ul>
-          <li>Email: <span>Luka68690@gmail.com</span></li>
+          <li><span>Email: </span>Luka68690@gmail.com</li>
           <li>
-            LinkedIn:
+            <span>LinkedIn:</span>
             <a href="https://www.linkedin.com/in/luka-gabunia-33682a338/"
               >luka gabunia</a
             >
           </li>
-          <li>Location: Tbilisi</li>
+          <li><span>Location: </span> Tbilisi</li>
         </ul>
       </section>
       <section id="skills">
@@ -73,19 +75,19 @@
       </section>
       <section id="code">
         <h2>Code Example</h2>
-        <p>
-          export class Challenge {<br />
-          static solution(number: number) {<br />
-          let sum: number = 0;<br />
-          for (let i: number = 0; i &lt; number; i++) {<br />
-          if (i % 3 === 0 || i % 5 === 0) {<br />
-          sum += i;<br />
-          }<br />
-          }<br />
-          return sum;<br />
-          }<br />
-          }<br />
-        </p>
+        <pre><code>
+        export class Challenge {
+          static solution(number: number) {
+            let sum: number = 0;
+            for (let i: number = 0; i < number; i++) {
+              if (i % 3 === 0 || i % 5 === 0) {
+                sum += i;
+              }
+            }
+            return sum;
+          }
+        }
+  </code></pre>
       </section>
       <section id="projects">
         <h2>Projects</h2>
@@ -106,15 +108,15 @@
       <section id="education">
         <h2>Education</h2>
         <ul>
-          <li>Georgian Technical University: <span>2023 - present</span></li>
-          <li>Smart Academy: <span>2025 - 2026</span></li>
+          <li><span>Georgian Technical University: </span>2023 - present</li>
+          <li><span>Smart Academy: </span> 2025 - 2026</li>
         </ul>
       </section>
       <section id="languages">
         <h2>Languages</h2>
         <ul>
-          <li>English - B2</li>
-          <li>Russian - B2</li>
+          <li><span>English </span> - B2</li>
+          <li><span>Russian </span> - B2</li>
         </ul>
       </section>
     </main>
