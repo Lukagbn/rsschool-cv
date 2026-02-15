@@ -51,9 +51,9 @@ header ul li a {
   color: black;
   font-weight: 700;
 }
-#self-introduction {
-  margin-top: 20px;
+main {
+  margin-block: 30px;
 }
-#self-introduction h2 {
-  margin-bottom: 10px;
+h2 {
+  margin-block: 20px;
 }
