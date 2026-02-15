@@ -58,3 +58,8 @@ h2 {
   padding: 10px;
   background: #80808069;
 }
+#projects ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
