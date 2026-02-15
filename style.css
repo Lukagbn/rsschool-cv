@@ -54,3 +54,7 @@ main {
 h2 {
   margin-block: 20px;
 }
+#code p {
+  padding: 10px;
+  background: #80808069;
+}
