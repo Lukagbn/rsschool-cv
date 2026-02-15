@@ -73,6 +73,15 @@ h2 {
 #education ul li span {
   font-weight: 400;
 }
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer img {
+  display: block;
+  max-width: 60px;
+}
 @media (min-width: 600px) {
   .container {
     max-width: 600px;
