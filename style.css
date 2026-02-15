@@ -9,8 +9,51 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .container {
-  max-width: 500px;
+  max-width: 340px;
+  width: 100%;
   margin: auto;
+  margin-inline: 10px;
+  background-color: #eeeeeecc;
+  border-radius: 20px;
+  padding: 15px;
+}
+.profile-img {
+  display: block;
+  max-width: 150px;
+  width: 100%;
+  border-radius: 50%;
+  margin: auto;
+}
+ul li {
+  list-style: none;
+}
+h1 {
+  text-align: center;
+}
+h1 span {
+  display: block;
+  color: rgb(156, 5, 156);
+}
+header ul {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #eeeeeecc;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+header ul li a {
+  color: black;
+  font-weight: 700;
+}
+#self-introduction {
+  margin-top: 20px;
+}
+#self-introduction h2 {
+  margin-bottom: 10px;
 }
